@@ -1,0 +1,33 @@
+.d-flex {
+  display: flex;
+  &.justify-content-center {
+    justify-content: center;
+  }
+  &.justify-content-space-around {
+    justify-content: space-around;
+  }
+  &.justify-content-space-between {
+    justify-content: space-between;
+  }
+  &.justify-content-flex-end {
+    justify-content: flex-end;
+  }
+  &.align-items-center {
+    align-items: center;
+  }
+  &.flex-basis-30 {
+    flex-basis: 30px;
+  }
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.v-hidden {
+  visibility: hidden;
+}

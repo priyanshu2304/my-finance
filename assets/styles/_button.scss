@@ -1,0 +1,44 @@
+.rm-btn__black {
+  background: $black;
+  border-radius: 5px;
+  color: $white;
+  border: 0px;
+  padding: $t-marg__pad * 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rm-btn__black-disable {
+  background: $gray-edark;
+  border-radius: 5px;
+  color: $white;
+  border: 0px;
+  padding: $t-marg__pad * 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rm-btn__outline {
+  background: $white;
+  border-radius: 5px;
+  color: $black;
+  border: 1px solid $black;
+  padding: $t-marg__pad * 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rm-btn__red-outline {
+  background: $white;
+  border-radius: 5px;
+  color: $punch-red;
+  border: 1px solid $punch-red;
+  padding: $t-marg__pad * 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}

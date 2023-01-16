@@ -1,0 +1,47 @@
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-disable {
+  cursor: not-allowed;
+}
+
+.rm-charges__section {
+  border: 1px dashed $punch-red;
+  border-radius: 10px;
+  background-color: $light-red;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: $t-marg__pad;
+  font-weight: $font-ebold-weight;
+  color: $punch-red;
+  .rm-charges__title {
+    font-size: $font-size-small;
+    font-weight: $font-ebold-weight;
+  }
+  .rm-charges__amount {
+    font-size: $font-size-h3-p;
+    padding-top: $t-marg__pad * 0.5;
+  }
+}
+
+.verloop-button {
+  display: none !important;
+}
+
+.full-width {
+  width: 100%;
+  font-size: $font-size-base;
+  cursor: pointer;
+}
