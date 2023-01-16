@@ -1,0 +1,121 @@
+// ===== Color-variables =====
+// New color code variables ----------
+$sea-green: #1dbdc0;
+$sea-green-light: #f3ffff;
+$light-teal: #76e3b7;
+$green: #0bc6a0;
+$light-green: #e8f8f9;
+$sun-orange: #fdb614;
+$yellow: #a27b21;
+$yellow-tag: #f5a623;
+$punch-red: #dc3226;
+$red-stroke2: #d01d23;
+$button-red: #ff5b5d;
+$button-light-red: #ffd3d3;
+$white: #fff;
+$light-white: #f1ffff;
+$green-bullet: #7ed321;
+$light-orange: #f2863b;
+$rm-yellowDark: #d1b686;
+$rm-darkBrown: #715a31;
+$rm-textBrown: #866e45;
+$black: #313131;
+$light-red: #ffe9e8;
+$light-primary: #f4857d;
+
+// Organised Gray
+$gray-primary: #787878;
+$gray-secondary: #ededed;
+$gray-base: #717171;
+$gray-edark: #9c9c9c;
+$gray-dark: #bababa;
+$bgray-dark: #bfcfdc;
+$gray-light: #e2eaf0;
+$gray-medlight: #e6e6e6;
+$gray-elight: #f5f7fa;
+$off-white: #fafafa;
+// ===== Color-variables End =====
+
+// == Social variables ==
+$ln: #0077b5;
+$fb: #3b5998;
+$tc: #0086ff;
+$gp: #d34836;
+// Social variables end ==
+
+// ===== Alignments =====
+// Header margin ----------
+$header-margin: 60px;
+$header-sticky: 30px;
+
+$t-marg__pad: 10px;
+$l-marg__pad: $t-marg__pad;
+$r-marg__pad: $t-marg__pad;
+$b-marg__pad: $t-marg__pad;
+
+// Spacing variables ----------
+$primary-spacing: 80px;
+$v-space: 100px;
+$secondary-spacing: 40px;
+
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 16px !default;
+
+// Border-radius ----------
+$border-radius-small: 2px;
+$border-radius-base: 3px;
+$border-radius-large: 6px;
+
+// ===== Alignments End =====
+
+//Positions CSS
+$p-abosulte: absolute;
+$r-relative: relative;
+$f-fixed: fixed;
+$s-static: static;
+
+//Float & text-align CSS
+$f-right: right;
+$f-left: left;
+$t-right: right;
+$t-left: left;
+$t-center: center;
+
+// ===== Typography =====
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-medium: 15px; // ~15px
+$font-size-med: 16px; // ~16px
+$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h1-p: floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2-p: floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3-p: ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4-p: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h6-p: 10px;
+$font-size-h5-p: $font-size-base !default;
+$font-size-xlarge: 20px;
+$font-size-xsmall: 8px;
+
+//Font-weight & Font-family
+$font-normal-family: 'Muli', sans-serif;
+$font-light-weight: 200;
+$font-normal-weight: 400;
+$font-bold-weight: 600;
+$font-ebold-weight: 700;
+$font-extrabold-weight: 900;
+// Backward compatibility
+$font-bold-family: $font-normal-family;
+
+// Line-height
+$line-height-base: 1.428571429; // 20/14
+$line-height-small: 1.5;
+$line-height-med: 1.38;
+$line-height-large: 1.57;
+$line-height-large: 1.3333333; // extra decimals for Win 8.1 Chrome
+// ===== Typography End =====
+
+// Breaks
+$break-small: 992px;
+
+// Width
+$full-width: 100%;
