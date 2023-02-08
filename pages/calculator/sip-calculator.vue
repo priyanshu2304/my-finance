@@ -14,7 +14,7 @@
       <input v-model="rateOfInterest" type="number" />
     </div>
     <button @click="submit">calculator</button>
-    <div class="">{{ Amount.toFixed(2) }}</div>
+    <div class="">{{ Amount && Amount.toFixed(2) }}</div>
   </div>
 </template>
 

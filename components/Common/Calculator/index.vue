@@ -41,6 +41,12 @@ export default {
           path: '',
           imageUrl: require('@/assets/images/dummy.png'),
         },
+        {
+          id: 4,
+          name: 'Loan Calculator',
+          path: '/calculator/loan-calculator',
+          imageUrl: require('@/assets/images/dummy.png'),
+        },
       ],
     }
   },
