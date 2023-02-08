@@ -30,6 +30,24 @@ export default {
           imageUrl: require('@/assets/images/dummy.png'),
         },
         {
+          id: 5,
+          name: 'Loan Calculator',
+          path: '/calculator/loan-calculator',
+          imageUrl: require('@/assets/images/dummy.png'),
+        },
+        {
+          id: 6,
+          name: 'Retirement Calculator',
+          path: '/calculator/retirement-calculator',
+          imageUrl: require('@/assets/images/dummy.png'),
+        },
+        {
+          id: 7,
+          name: 'Investment Calculator',
+          path: '/calculator/investment-calculator',
+          imageUrl: require('@/assets/images/dummy.png'),
+        },
+        {
           id: 3,
           name: 'Goal Calculator',
           path: '',
@@ -39,12 +57,6 @@ export default {
           id: 4,
           name: 'Lump-Sum Calculator',
           path: '',
-          imageUrl: require('@/assets/images/dummy.png'),
-        },
-        {
-          id: 4,
-          name: 'Loan Calculator',
-          path: '/calculator/loan-calculator',
           imageUrl: require('@/assets/images/dummy.png'),
         },
       ],
