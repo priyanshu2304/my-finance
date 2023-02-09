@@ -13,7 +13,7 @@
         </div>
         <form @submit.prevent="submit">
           <div class="mf-input__section">
-            <label class="mf-input__heading">No Of Years Invested</label>
+            <label class="mf-input__heading">Number Of Years Invested</label>
             <input class="mf-input__value" v-model="noOfYear" type="number" />
           </div>
           <div class="mf-input__section">
