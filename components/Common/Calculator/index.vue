@@ -33,7 +33,8 @@ export default {
           path: '/calculator/CAGR-calculator',
           imageUrl: require('@/assets/images/dummy.png'),
           backgroundClr: '#FAD85D',
-          description: '',
+          description:
+            'CAGR stands for Compound Annual Growth Rate, which is a measure of the average yearly growth rate of an investment over a specific time period. It takes into account the compound effect of any gains or losses and assumes a constant rate of growth. It is used to determine the average return on an investment over a number of years.',
         },
         {
           id: 3,
@@ -41,7 +42,8 @@ export default {
           path: '/calculator/loan-calculator',
           imageUrl: require('@/assets/images/dummy.png'),
           backgroundClr: '#F2A0FF',
-          description: '',
+          description:
+            'These calculators help determine the monthly payment and total interest of a loan, given the loan amount, interest rate, and term.',
         },
         {
           id: 4,
@@ -49,7 +51,8 @@ export default {
           path: '/calculator/retirement-calculator',
           imageUrl: require('@/assets/images/dummy.png'),
           backgroundClr: '#FAD85D',
-          description: '',
+          description:
+            'These calculators help individuals plan and evaluate their retirement savings, including calculating the amount of savings needed to reach a certain retirement goal and determining the estimated monthly retirement income.',
         },
         {
           id: 5,
@@ -57,23 +60,17 @@ export default {
           path: '/calculator/investment-calculator',
           imageUrl: require('@/assets/images/dummy.png'),
           backgroundClr: '#FAD85D',
-          description: '',
+          description:
+            'These calculators help individuals determine the future value of their investments, including stocks, bonds, and mutual funds.',
         },
         {
           id: 6,
-          name: 'Goal Calculator',
-          path: '',
+          name: 'Saving Calculator',
+          path: '/calculator/saving-calculator',
           imageUrl: require('@/assets/images/dummy.png'),
           backgroundClr: '#FAD85D',
-          description: '',
-        },
-        {
-          id: 7,
-          name: 'Lump-Sum Calculator',
-          path: '',
-          imageUrl: require('@/assets/images/dummy.png'),
-          backgroundClr: '#FAD85D',
-          description: '',
+          description:
+            'These calculators help individuals determine the future value of their savings and the amount of savings needed to reach a certain goal, given the current savings and interest rate.',
         },
       ],
     }

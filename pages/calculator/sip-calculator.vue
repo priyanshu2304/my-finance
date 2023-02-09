@@ -3,15 +3,15 @@
     <h1 class="mf-calculator__heading">SIP</h1>
     <div class="mf-calculator__section">
       <div class="mf-calculator__input-section">
-        <div class="mf-input__section">
-          <label class="mf-input__heading">Monthly Sip</label>
-          <input
-            class="mf-input__value"
-            v-model="monthlyAmount"
-            type="number"
-          />
-        </div>
         <form @submit.prevent="submit">
+          <div class="mf-input__section">
+            <label class="mf-input__heading">Monthly Sip</label>
+            <input
+              class="mf-input__value"
+              v-model="monthlyAmount"
+              type="number"
+            />
+          </div>
           <div class="mf-input__section">
             <label class="mf-input__heading">Number Of Years Invested</label>
             <input class="mf-input__value" v-model="noOfYear" type="number" />
