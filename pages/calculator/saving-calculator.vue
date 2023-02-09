@@ -51,15 +51,14 @@ export default {
   },
   methods: {
     submit() {
-      const monthlyInterestRate = this.annualInterestRate / 12 / 100
-      let totalSavings = 0
-
+      let savings = 0
       for (let i = 0; i < this.years * 12; i++) {
-        totalSavings =
-          (totalSavings + this.monthlySavings) * (1 + monthlyInterestRate)
+        savings =
+          (savings + this.monthlySavings) *
+          (1 + this.annualInterestRate / 100 / 12)
       }
 
-      this.totalSavings = totalSavings.toFixed(2)
+      this.totalSavings = savings.toFixed(2)
     },
     formatNumberWithComma(number) {
       return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')

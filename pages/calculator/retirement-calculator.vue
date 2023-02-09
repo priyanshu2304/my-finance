@@ -1,32 +1,59 @@
 <template>
   <div>
-    <h1>Retirement Calcultor</h1>
-    <div class="">
-      <label>Current Age</label>
-      <input v-model="currentAge" type="number" />
+    <h1 class="mf-calculator__heading">Retirement Calcultor</h1>
+    <div class="mf-calculator__section">
+      <div class="mf-calculator__input-section">
+        <form @submit.prevent="submit">
+          <div class="mf-input__section">
+            <label class="mf-input__heading">Current Age</label>
+            <input class="mf-input__value" v-model="currentAge" type="number" />
+          </div>
+          <div class="mf-input__section">
+            <label class="mf-input__heading">Retirement Age</label>
+            <input
+              class="mf-input__value"
+              v-model="retirementAge"
+              type="number"
+            />
+          </div>
+          <div class="mf-input__section">
+            <label class="mf-input__heading">Annual Income</label>
+            <input
+              class="mf-input__value"
+              v-model="annualIncome"
+              type="number"
+            />
+          </div>
+          <div class="mf-input__section">
+            <label class="mf-input__heading">Saving Rate</label>
+            <input
+              class="mf-input__value"
+              v-model="savingsRate"
+              type="number"
+            />
+          </div>
+          <div class="mf-input__section">
+            <label class="mf-input__heading">Inflation Rate</label>
+            <input
+              class="mf-input__value"
+              v-model="inflationRate"
+              type="number"
+            />
+          </div>
+          <div class="mf-input__section">
+            <label class="mf-input__heading">Return Rate</label>
+            <input class="mf-input__value" v-model="returnRate" type="number" />
+          </div>
+          <button class="rm-btn__black width" type="submit">Calculator</button>
+        </form>
+        <div v-if="amount" class="mf-calculator__display-section">
+          <div class="mf-calculator__display-heading">Amount</div>
+          <div class="mf-calculator__display-value">
+            {{ amount && formatNumberWithComma(Math.abs(amount.toFixed(2))) }}
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="">
-      <label>Retirement Age</label>
-      <input v-model="retirementAge" type="number" />
-    </div>
-    <div class="">
-      <label>Annual Income</label>
-      <input v-model="annualIncome" type="number" />
-    </div>
-    <div class="">
-      <label>Saving Rate</label>
-      <input v-model="savingsRate" type="number" />
-    </div>
-    <div class="">
-      <label>Inflation Rate</label>
-      <input v-model="inflationRate" type="number" />
-    </div>
-    <div class="">
-      <label>Return Rate</label>
-      <input v-model="returnRate" type="number" />
-    </div>
-    <button @click="submit">calculator</button>
-    <div class="">{{ amount && Math.abs(amount.toFixed(2)) }}</div>
   </div>
 </template>
 
@@ -52,6 +79,9 @@ export default {
         (1 / (1 + this.returnRate) -
           1 / Math.pow(1 + this.inflationRate, yearsUntilRetirement))
       this.amount = (savingsGoal * this.savingsRate) / 12
+    },
+    formatNumberWithComma(number) {
+      return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
     },
   },
 }

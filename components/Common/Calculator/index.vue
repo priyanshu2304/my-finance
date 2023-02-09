@@ -72,6 +72,14 @@ export default {
           description:
             'These calculators help individuals determine the future value of their savings and the amount of savings needed to reach a certain goal, given the current savings and interest rate.',
         },
+        {
+          id: 7,
+          name: 'HRA Calculator',
+          path: '/calculator/hra-calculator',
+          imageUrl: require('@/assets/images/dummy.png'),
+          backgroundClr: '#FAD85D',
+          description: 'Calculate your House Rent Allowance (HRA)',
+        },
       ],
     }
   },
