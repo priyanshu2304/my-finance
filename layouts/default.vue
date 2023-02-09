@@ -16,6 +16,8 @@ export default {
 
 <style lang="scss" scoped>
 .mf-main-page {
-  padding: $t-marg__pad * 4;
+  max-width: 1110px;
+  margin: 50px auto;
+  width: 100%;
 }
 </style>
